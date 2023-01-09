@@ -7,6 +7,10 @@
     <title>I know your IP</title>
 </head>
 <body>
+    {% if user_ip %}
     <h1>Hi, this is your IP: {{ user_ip }}</h1>
+    {% else %}
+    <a href="{{} url_for('index') }}"></a>
+    {% endif %}
 </body>
 </html>
