@@ -7,6 +7,9 @@
     <title>{% block title %}Flask to begginers{% endblock title %}</title>
 </head>
 <body>
+    <header>
+        {% include "navbar.html" %}
+    </header>
     {% block title2 %}{% endblock title2 %}
     {% block content %}{% endblock content %}
 </body>
