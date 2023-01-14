@@ -7,7 +7,7 @@
     {% if user_ip %}
         <h1>Hi, this is your IP: {{ user_ip }}</h1>
     {% else %}
-        <a href="{ url_for('index') }}"></a>
+        <a href="{ url_for('index') }"></a>
     {% endif %}
     <ul>
         {% for todo in todos %}
