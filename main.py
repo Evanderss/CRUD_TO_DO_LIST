@@ -7,6 +7,11 @@ app = Flask(__name__)
 todos = ["Finish this project", "Buy a coffe", "Sleep"]
 
 
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html', error=error)
+
+
 @app.get("/")
 def index():
     user_ip = request.remote_addr
