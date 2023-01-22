@@ -34,4 +34,4 @@ class MainTest(TestCase):
             'password': 'fake-password'
         }
         response = self.client.post(url_for('hello'), data=fake_form)
-        self.assertRedirects(response, url_for('index')) 
+        self.assertRedirects(response, url_for('index'))
