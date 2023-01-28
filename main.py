@@ -1,13 +1,9 @@
-from flask import request, make_response, redirect, render_template, session, url_for, flash
+from flask import request, make_response, redirect, render_template, session
 from app import create_app
-from app.forms import LoginForm
 import unittest
 
 
 app = create_app()
-
-
-app.config['SECRET_KEY'] = 'SUPER SECRETO'
 
 
 todos = ["Finish this project", "Buy a coffe", "Sleep"]
